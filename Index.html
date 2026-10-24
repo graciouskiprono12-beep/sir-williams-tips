@@ -1,0 +1,355 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sir Williams Tips | Football Predictions</title>
+  <style>
+    :root {
+      --bg: #07110d;
+      --card: #101b15;
+      --green: #31d17c;
+      --gold: #e8bd62;
+      --text: #f3f7f3;
+      --muted: #9eafa4;
+      --border: #26392d;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #0c1811;
+      padding: 18px 5%;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .brand { font-size: 22px; font-weight: bold; }
+    .brand span, .green { color: var(--green); }
+
+    nav { display: flex; gap: 15px; flex-wrap: wrap; }
+    nav a { color: var(--text); text-decoration: none; font-size: 14px; }
+
+    .container { width: 90%; max-width: 1100px; margin: auto; }
+
+    .hero { padding: 65px 0; }
+    .hero h1 { font-size: clamp(36px, 7vw, 60px); line-height: 1.1; }
+    .hero p { color: var(--muted); max-width: 600px; }
+
+    .btn {
+      display: inline-block;
+      border: none;
+      border-radius: 8px;
+      background: var(--green);
+      color: #06140b;
+      padding: 12px 18px;
+      font-weight: bold;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .gold-btn { background: var(--gold); }
+    section { padding: 30px 0 45px; }
+    h2 { font-size: 28px; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 22px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #173523;
+      color: var(--green);
+      padding: 4px 9px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    .gold { color: var(--gold); }
+    .muted { color: var(--muted); font-size: 14px; }
+
+    .stats {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin: 25px 0;
+    }
+
+    .stat {
+      background: var(--card);
+      border: 1px solid var(--border);
+      padding: 15px;
+      border-radius: 10px;
+      flex: 1;
+      min-width: 120px;
+    }
+
+    .stat strong { display: block; font-size: 22px; }
+
+    table { width: 100%; border-collapse: collapse; }
+    th, td {
+      padding: 12px 8px;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+    }
+    th { color: var(--muted); }
+
+    input, select {
+      display: block;
+      width: 100%;
+      padding: 11px;
+      margin: 8px 0 14px;
+      background: var(--bg);
+      color: var(--text);
+      border: 1px solid var(--border);
+      border-radius: 7px;
+    }
+
+    .notice {
+      padding: 15px;
+      border: 1px solid #66542c;
+      border-radius: 10px;
+      color: #e4d6b4;
+      font-size: 13px;
+    }
+
+    footer {
+      padding: 25px 5%;
+      margin-top: 30px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      header { align-items: flex-start; }
+      nav { gap: 10px; }
+      .hero { padding: 40px 0; }
+      th, td { font-size: 13px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="brand">Sir Williams <span>Tips</span></div>
+  <nav>
+    <a href="#tips">Free Tips</a>
+    <a href="#results">Results</a>
+    <a href="#vip">VIP</a>
+    <a href="#admin">Admin</a>
+  </nav>
+</header>
+
+<main>
+  <div class="container hero">
+    <span class="tag">FOOTBALL ANALYSIS</span>
+    <h1>Read the game.<br><span class="green">Back your research.</span></h1>
+    <p>
+      Football predictions, match analysis and transparent results
+      tracking in one place.
+    </p>
+    <a class="btn" href="#tips">Explore Today's Tips</a>
+    <a class="btn gold-btn" href="#vip">Join VIP</a>
+
+    <div class="stats">
+      <div class="stat">
+        <strong class="green">Daily</strong>
+        <span class="muted">Free tips</span>
+      </div>
+      <div class="stat">
+        <strong class="gold">VIP</strong>
+        <span class="muted">Premium analysis</span>
+      </div>
+      <div class="stat">
+        <strong>Open</strong>
+        <span class="muted">Results tracking</span>
+      </div>
+    </div>
+  </div>
+
+  <section id="tips">
+    <div class="container">
+      <h2>Today's <span class="green">Free Tips</span></h2>
+      <p class="muted">Example selections below. Replace them with researched,
+      current fixtures before publishing.</p>
+
+      <div class="grid">
+        <div class="card">
+          <span class="tag">FREE TIP</span>
+          <h3>Team A vs Team B</h3>
+          <p class="muted">Kickoff: To be confirmed</p>
+          <p>Prediction: <strong>Over 1.5 Goals</strong></p>
+          <p>Example odds: <strong class="gold">1.40</strong></p>
+        </div>
+
+        <div class="card">
+          <span class="tag">FREE TIP</span>
+          <h3>Team C vs Team D</h3>
+          <p class="muted">Kickoff: To be confirmed</p>
+          <p>Prediction: <strong>Both Teams to Score</strong></p>
+          <p>Example odds: <strong class="gold">1.75</strong></p>
+        </div>
+
+        <div class="card">
+          <span class="tag gold">VIP PREVIEW</span>
+          <h3>Premium Selection</h3>
+          <p>Detailed analysis for verified members.</p>
+          <p class="muted">Demo preview; no member authentication is active.</p>
+          <a class="btn" href="#vip">View VIP Plans</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="results">
+    <div class="container">
+      <h2>Recent <span class="green">Results</span></h2>
+      <div class="card" style="overflow-x:auto">
+        <table>
+          <thead>
+            <tr>
+              <th>Fixture</th>
+              <th>Prediction</th>
+              <th>Odds</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Team A vs Team B</td>
+              <td>Over 1.5</td>
+              <td>1.40</td>
+              <td>Demo</td>
+            </tr>
+            <tr>
+              <td>Team C vs Team D</td>
+              <td>Both teams score</td>
+              <td>1.75</td>
+              <td>Demo</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="muted">These are sample records, not verified historical results.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="vip">
+    <div class="container">
+      <h2>VIP <span class="green">Membership</span></h2>
+      <div class="grid">
+        <div class="card">
+          <span class="tag">WEEKLY</span>
+          <h3>Weekly VIP</h3>
+          <p class="gold" style="font-size:30px;font-weight:bold">$10</p>
+          <p>Premium selections and match analysis.</p>
+          <button class="btn" onclick="choosePlan('Weekly VIP')">
+            Choose Weekly
+          </button>
+        </div>
+
+        <div class="card">
+          <span class="tag gold">MONTHLY</span>
+          <h3>Monthly VIP</h3>
+          <p class="gold" style="font-size:30px;font-weight:bold">$25</p>
+          <p>Premium tips, analysis and results history.</p>
+          <button class="btn gold-btn" onclick="choosePlan('Monthly VIP')">
+            Choose Monthly
+          </button>
+        </div>
+      </div>
+      <p id="payment-message" class="muted"></p>
+      <p class="muted">Prices are examples. Payment processing is not connected.</p>
+    </div>
+  </section>
+
+  <section id="admin">
+    <div class="container">
+      <h2>Admin <span class="green">Dashboard Preview</span></h2>
+      <div class="card">
+        <p class="muted">
+          Demo form only. It does not save or publish tips, and it is not
+          protected by an admin login.
+        </p>
+        <form id="tip-form">
+          <label for="fixture">Fixture</label>
+          <input id="fixture" placeholder="Team A vs Team B" required>
+
+          <label for="prediction">Prediction</label>
+          <input id="prediction" placeholder="Over 2.5 goals" required>
+
+          <label for="odds">Odds</label>
+          <input id="odds" type="number" min="1.01" step="0.01"
+                 placeholder="1.85" required>
+
+          <button class="btn" type="submit">Preview Tip</button>
+        </form>
+        <p id="preview" class="muted"></p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="notice">
+        <strong>Responsible betting:</strong> Predictions are opinions,
+        not guarantees. Betting involves financial risk. Only participate
+        where legal, meet the legal age requirement, and never stake money
+        you cannot afford to lose.
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  © <span id="year"></span> Sir Williams Tips · Football analysis and predictions
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  function choosePlan(plan) {
+    document.getElementById("payment-message").textContent =
+      plan + " selected. Payments are not connected; no money has been charged.";
+  }
+
+  document.getElementById("tip-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const fixture = document.getElementById("fixture").value.trim();
+    const prediction = document.getElementById("prediction").value.trim();
+    const odds = document.getElementById("odds").value;
+
+    document.getElementById("preview").textContent =
+      "Preview only: " + fixture + " | " + prediction +
+      " | Example odds: " + odds +
+      ". This tip has not been saved or published.";
+  });
+</script>
+
+</body>
+</html>
